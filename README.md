@@ -20,7 +20,9 @@ personal-site/
 ├─ index.html            # 全部内容（改文字就改这里）
 ├─ assets/
 │  ├─ css/style.css      # 样式与响应式
-│  └─ js/main.js         # 动效、打字机、复制、导航
+│  ├─ js/main.js         # 动效、打字机、复制、导航
+│  ├─ img/avatar.jpg     # 关于我配图（现场工作台照）
+│  └─ files/ChangHao_UPW_PLC.zip   # 开源分享：TIA V18 UPW 项目（可下载）
 ├─ favicon.svg
 └─ README.md
 ```

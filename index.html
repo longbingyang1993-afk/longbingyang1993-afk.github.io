@@ -38,6 +38,7 @@
       <a href="#about" data-nav="about">关于我</a>
       <a href="#skills" data-nav="skills">核心能力</a>
       <a href="#projects" data-nav="projects">项目案例</a>
+      <a href="#opensource" data-nav="opensource">开源分享</a>
       <a href="#timeline" data-nav="timeline">经历</a>
       <a href="#contact" data-nav="contact">联系</a>
       <a class="nav-cta" href="#contact">聊聊你的水站</a>
@@ -349,11 +350,55 @@
     </div>
   </section>
 
+  <!-- ============ OPENSOURCE ============ -->
+  <section class="section" id="opensource">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="sec-index">04</span>
+        <h2 class="sec-title">开源分享</h2>
+        <p class="sec-sub">SHARE / 学习交流</p>
+      </div>
+
+      <article class="card dl-card" data-reveal>
+        <div class="dl-head">
+          <div class="dl-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11M7.5 9.5L12 14l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </div>
+          <div class="dl-title">
+            <h3>ChangHao 超纯水（UPW）PLC 项目源码</h3>
+            <p class="dl-meta">TIA Portal V18 全项目备份 · 3.2 MB · 2026-11</p>
+          </div>
+          <a class="btn btn-primary dl-btn" href="assets/files/ChangHao_UPW_PLC.zip" download>
+            下载项目
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10M5.5 8.5L10 13l4.5-4.5M4 16.5h12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <p class="dl-desc">
+          一套超纯水（UPW）系统的完整 TIA Portal 项目，免费开放给自动化爱好者对照学习。
+          项目按真实工艺组织：顺控步序、联锁保护、报警管理都在里面，和我页面上讲的方法论一一对应。
+        </p>
+
+        <div class="dl-steps">
+          <div class="dl-step"><span>01</span><b>还原项目</b><em>TIA Portal V18 及以上版本，双击 .ap18 打开，或用"项目 → 恢复"导入</em></div>
+          <div class="dl-step"><span>02</span><b>对照硬件</b><em>先看设备组态和 IO 变量表，把点位和工艺流程对应起来</em></div>
+          <div class="dl-step"><span>03</span><b>读顺控</b><em>重点看顺控块：步号状态机、步进条件、出步清零的写法</em></div>
+          <div class="dl-step"><span>04</span><b>看细节</b><em>阀单点命令、先阀后泵的联锁、报警分级与文本组织</em></div>
+        </div>
+
+        <p class="dl-note">
+          ⚠️ 程序仅供学习交流，请勿直接用于商业项目；现场使用前务必自行验证与适配。
+          有问题欢迎通过页面底部联系方式交流。
+        </p>
+      </article>
+    </div>
+  </section>
+
   <!-- ============ TIMELINE ============ -->
   <section class="section section-alt" id="timeline">
     <div class="container">
       <div class="sec-head" data-reveal>
-        <span class="sec-index">04</span>
+        <span class="sec-index">05</span>
         <h2 class="sec-title">一路走过来</h2>
         <p class="sec-sub">EXPERIENCE / 经历</p>
       </div>

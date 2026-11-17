@@ -801,6 +801,65 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
   .footer-inner{ flex-direction:column; align-items:flex-start; gap:8px; }
 }
 
+/* ---------- 开源分享 ---------- */
+.dl-card{ padding:30px 32px; }
+.dl-head{
+  display:flex; align-items:center; gap:18px;
+  padding-bottom:20px; margin-bottom:20px;
+  border-bottom:1px dashed rgba(120,175,255,.1);
+}
+.dl-icon{
+  flex:0 0 46px; width:46px; height:46px; border-radius:12px;
+  display:grid; place-items:center; color:var(--cyan);
+  border:1px solid rgba(34,211,238,.24);
+  background:rgba(34,211,238,.07);
+}
+.dl-icon svg{ width:22px; height:22px; }
+.dl-title{ min-width:0; margin-right:auto; }
+.dl-title h3{ font-size:17.5px; letter-spacing:.01em; }
+.dl-meta{
+  margin-top:6px;
+  font-family:var(--mono); font-size:11px; color:var(--muted);
+  letter-spacing:.04em;
+}
+.dl-btn{ flex:0 0 auto; padding:11px 20px; font-size:12.5px; }
+.dl-desc{ font-size:13.5px; line-height:1.95; color:var(--text-2); max-width:760px; }
+.dl-steps{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:14px;
+  margin-top:22px;
+}
+.dl-step{
+  padding:16px 16px 14px;
+  border-radius:11px;
+  border:1px solid rgba(120,175,255,.1);
+  background:rgba(255,255,255,.015);
+}
+.dl-step span{
+  font-family:var(--mono); font-size:10px;
+  color:rgba(34,211,238,.75); letter-spacing:.14em;
+}
+.dl-step b{ display:block; margin-top:6px; font-size:13px; font-weight:500; color:#D5E1F0; }
+.dl-step em{
+  display:block; margin-top:7px; font-style:normal;
+  font-size:11.5px; line-height:1.75; color:#7E92A9;
+}
+.dl-note{
+  margin-top:22px; padding:13px 16px;
+  border-radius:10px;
+  border:1px solid rgba(186,122,20,.3);
+  background:rgba(186,122,20,.07);
+  font-size:12px; line-height:1.8; color:#C9A96A;
+}
+@media (max-width:1080px){
+  .dl-steps{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:860px){
+  .dl-head{ flex-wrap:wrap; }
+  .dl-btn{ width:100%; justify-content:center; margin-top:14px; }
+  .dl-steps{ grid-template-columns:1fr; }
+  .dl-card{ padding:22px 20px; }
+}
+
 /* ---------- 动效降级 ---------- */
 @media (prefers-reduced-motion:reduce){
   html{ scroll-behavior:auto; }
